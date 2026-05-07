@@ -488,6 +488,7 @@ h3 { font-size: 1.35rem; font-weight: 700; }
   padding: 24px;
   animation: fade .25s ease;
 }
+.lightbox[hidden] { display: none !important; }
 .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 8px; box-shadow: var(--shadow-lg); }
 .lb-close, .lb-prev, .lb-next {
   position: absolute; color: var(--white); font-size: 2.5rem;
