@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Buschen Produktdesign – Mein Lieblings-Platz aus dem 3D-Drucker</title>
+  <meta name="description" content="Aus 2D-Karten werden einzigartige 3D-gedruckte Reliefs deiner Lieblings-Stadt. Personalisierte Magnete, gerahmte Stadtkarten und individuelle Produktdesigns aus Greven." />
+  <meta name="theme-color" content="#ff6f2a" />
+  <meta property="og:title" content="Simon Buschen Produktdesign" />
+  <meta property="og:description" content="Mein Lieblings-Platz aus dem 3D-Drucker – einzigartige 3D-Reliefs deiner Stadt." />
+  <meta property="og:image" content="images/tecklenburg-rahmen.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="images/logo-icon.png" />
+  <link rel="apple-touch-icon" href="images/logo-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============= NAVIGATION ============= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo" aria-label="Simon Buschen Produktdesign – Startseite">
+        <img src="images/logo.svg" alt="Simon Buschen Produktdesign" />
+      </a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#prozess">Prozess</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt" class="nav-cta">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============= HERO ============= -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-bg"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <span class="dot"></span>
+          Handgemacht in Greven
+        </span>
+        <h1 class="hero-title">
+          Mein <span class="accent">Lieblings­-Platz</span><br />
+          aus dem 3D-Drucker.
+        </h1>
+        <p class="hero-sub">
+          Aus zweidimensionalen Karten erschaffe ich greifbare 3D-Reliefs deiner
+          Stadt. Jedes Stück ein Unikat – mit Liebe zum Detail gedruckt.
+        </p>
+        <div class="hero-actions">
+          <a href="#prozess" class="btn btn-primary">
+            Den Prozess entdecken
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#galerie" class="btn btn-ghost">Galerie ansehen</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>3D</strong><span>Relief-Druck</span></div>
+          <div><strong>100%</strong><span>Individuell</span></div>
+          <div><strong>♥</strong><span>Aus Greven</span></div>
+        </div>
+      </div>
+
+      <!-- Animated 2D→3D Visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card-stack">
+          <div class="card card-2d">
+            <div class="card-label">2D-Karte</div>
+            <svg viewBox="0 0 200 200" class="map-2d">
+              <rect width="200" height="200" fill="#f4ede4"/>
+              <path d="M0 70 Q40 60 80 75 T200 80 L200 110 Q160 120 120 105 T0 100 Z" fill="#a3c585"/>
+              <path d="M40 0 L60 200 M120 0 L140 200" stroke="#5b8c3e" stroke-width="3" fill="none"/>
+              <path d="M0 130 Q60 150 120 135 T200 140" stroke="#3a7bc8" stroke-width="6" fill="none" opacity="0.7"/>
+              <rect x="50" y="40" width="14" height="14" fill="#222"/>
+              <rect x="80" y="55" width="10" height="10" fill="#222"/>
+              <rect x="110" y="35" width="18" height="18" fill="#222"/>
+              <rect x="145" y="50" width="12" height="12" fill="#222"/>
+              <rect x="60" y="160" width="16" height="16" fill="#222"/>
+              <rect x="100" y="170" width="14" height="14" fill="#222"/>
+              <rect x="140" y="155" width="20" height="14" fill="#222"/>
+            </svg>
+          </div>
+          <div class="card card-3d">
+            <div class="card-label">3D-Relief</div>
+            <div class="relief">
+              <div class="r r1"></div><div class="r r2"></div><div class="r r3"></div>
+              <div class="r r4"></div><div class="r r5"></div><div class="r r6"></div>
+              <div class="r r7"></div><div class="heart-pin">♥</div>
+            </div>
+          </div>
+          <div class="arrow-anim">
+            <svg viewBox="0 0 60 24" width="60" height="24"><path d="M0 12 H50 M40 4 L50 12 L40 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#prozess" class="scroll-hint" aria-label="Nach unten scrollen">
+      <span>scrollen</span>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ============= PROZESS ============= -->
+  <section class="section prozess" id="prozess">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Der Prozess</span>
+        <h2>Von der Karte zum Kunstwerk</h2>
+        <p class="lead">
+          So entsteht aus einer flachen Karte deine Lieblings-Stadt in 3D – in
+          vier sorgfältigen Schritten.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step" data-step="01">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 6v36M6 24h36"/><circle cx="30" cy="18" r="2.5" fill="currentColor"/></svg>
+          </div>
+          <h3>Karte auswählen</h3>
+          <p>Du wählst Stadt, Stadtteil oder Lieblingsort. Ich finde die passenden geografischen Daten dazu.</p>
+        </li>
+        <li class="step" data-step="02">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36M14 14h.01M20 14h.01"/><path d="M14 26l6 6 14-14"/></svg>
+          </div>
+          <h3>3D-Modell erstellen</h3>
+          <p>Aus den 2D-Daten modelliere ich ein präzises 3D-Relief – Gebäudehöhen, Straßen, Flüsse, Grünflächen.</p>
+        </li>
+        <li class="step" data-step="03">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h20l4 8v22a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V14z"/><path d="M14 22h20M18 30h12"/><circle cx="24" cy="14" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>3D-Druck</h3>
+          <p>Auf meinem 3D-Drucker entsteht dein Modell Schicht für Schicht – mit den Farben deiner Stadt.</p>
+        </li>
+        <li class="step" data-step="04">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l4 12 12 1-9 8 3 13-10-7-10 7 3-13-9-8 12-1z"/></svg>
+          </div>
+          <h3>Veredelung</h3>
+          <p>Auf Wunsch im Rahmen, mit Magnet, einem roten Herz an deinem Lieblingsort – ganz wie du es magst.</p>
+        </li>
+      </ol>
+
+      <!-- Interaktiver Vorher/Nachher Slider -->
+      <div class="compare-wrapper">
+        <h3 class="compare-title">Pur oder Farbig? Du entscheidest.</h3>
+        <p class="compare-sub">Ziehe den Schieber – die gleiche Stadt in zwei Druck-Varianten.</p>
+        <div class="compare" id="compare">
+          <img class="compare-after"  src="images/greven-hallenbad-farbig.jpg" alt="3D-gedruckte farbige Karte von Greven"/>
+          <img class="compare-before" src="images/greven-hallenbad-weiss.jpg"  alt="3D-Karte in weiß ohne Farbe"/>
+          <div class="compare-handle">
+            <div class="compare-line"></div>
+            <button class="compare-btn" type="button" aria-label="Vergleichen ziehen">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div class="compare-tag tag-left">Weiß</div>
+          <div class="compare-tag tag-right">Farbig</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= GALERIE ============= -->
+  <section class="section galerie" id="galerie">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Galerie</span>
+        <h2>Lieblings-Plätze aus dem Drucker</h2>
+        <p class="lead">Eine Auswahl meiner liebsten Projekte – jedes Stück ein Unikat.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+        <button class="chip" data-filter="karten" role="tab" aria-selected="false">Stadtkarten</button>
+        <button class="chip" data-filter="magnete" role="tab" aria-selected="false">Magnete</button>
+        <button class="chip" data-filter="design" role="tab" aria-selected="false">Sonderdesigns</button>
+      </div>
+
+      <div class="grid gallery" id="gallery">
+        <figure class="card-img" data-cat="karten" data-img="images/tecklenburg-rahmen.jpg">
+          <img src="images/tecklenburg-rahmen.jpg" alt="3D-gedruckte Karte von Tecklenburg im Rahmen" loading="lazy" />
+          <figcaption><span>Tecklenburg im Rahmen</span><small>Gerahmtes Relief</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="karten" data-img="images/tecklenburg-detail.jpg">
+          <img src="images/tecklenburg-detail.jpg" alt="Detail Tecklenburg Relief" loading="lazy" />
+          <figcaption><span>Tecklenburg Detail</span><small>Topografische Tiefen</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="karten" data-img="images/muenster-rote-liebe.jpg">
+          <img src="images/muenster-rote-liebe.jpg" alt="3D-Karte Münster mit rotem Herz" loading="lazy" />
+          <figcaption><span>Münster – Rote Liebe</span><small>Mit Herz-Marker</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="design" data-img="images/herz-weiss.jpg">
+          <img src="images/herz-weiss.jpg" alt="Herzförmiges 3D-Relief einer Stadt" loading="lazy" />
+          <figcaption><span>Herz-Karte</span><small>Sonderform</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="karten" data-img="images/greven-hallenbad-farbig.jpg">
+          <img src="images/greven-hallenbad-farbig.jpg" alt="Greven Hallenbad farbig" loading="lazy" />
+          <figcaption><span>Greven – Hallenbad</span><small>Farbiges Relief</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="karten" data-img="images/greven-hallenbad-weiss.jpg">
+          <img src="images/greven-hallenbad-weiss.jpg" alt="Greven Hallenbad weiß" loading="lazy" />
+          <figcaption><span>Greven – Weiß</span><small>Pures Relief</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="magnete" data-img="images/greven-wappen-magnete.jpg">
+          <img src="images/greven-wappen-magnete.jpg" alt="Greven Wappen Magnete" loading="lazy" />
+          <figcaption><span>Greven Wappen</span><small>Kühlschrankmagnete</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="magnete" data-img="images/greven-wappen-detail.jpg">
+          <img src="images/greven-wappen-detail.jpg" alt="Greven Magnet Detail" loading="lazy" />
+          <figcaption><span>Wappen Detail</span><small>Greven Emspünte</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="magnete" data-img="images/kuehlschrank-magnete.jpg">
+          <img src="images/kuehlschrank-magnete.jpg" alt="Kühlschrank-Magnete" loading="lazy" />
+          <figcaption><span>Magnet-Auswahl</span><small>Verschiedene Designs</small></figcaption>
+        </figure>
+        <figure class="card-img" data-cat="karten" data-img="images/tecklenburg-rahmen2.jpg">
+          <img src="images/tecklenburg-rahmen2.jpg" alt="Tecklenburg gerahmt Variante" loading="lazy" />
+          <figcaption><span>Tecklenburg</span><small>Variante</small></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="Schließen">×</button>
+    <button class="lb-prev" aria-label="Vorheriges Bild">‹</button>
+    <img class="lb-img" alt="" />
+    <button class="lb-next" aria-label="Nächstes Bild">›</button>
+  </div>
+
+  <!-- ============= ÜBER MICH ============= -->
+  <section class="section ueber" id="ueber-mich">
+    <div class="container ueber-grid">
+      <div class="ueber-img">
+        <img src="images/hero-simon-stand.jpg" alt="Simon Buschen an seinem Stand auf dem Weihnachtsmarkt" loading="lazy"/>
+        <div class="ueber-img-tag">Greven · Münsterland</div>
+      </div>
+      <div class="ueber-text">
+        <span class="eyebrow">Über mich</span>
+        <h2>Simon Buschen</h2>
+        <p class="lead">
+          Hi, ich bin Simon. In meiner Werkstatt in Greven verbinde ich
+          Produktdesign mit der Faszination 3D-Druck.
+        </p>
+        <p>
+          Was als Hobby begann, ist heute eine kleine Manufaktur:
+          Ich gestalte und drucke Reliefs von Städten, individuelle Magnete
+          und Sonderanfertigungen. Mein Anspruch: <strong>Jedes Stück
+          erzählt eine Geschichte</strong> – von dem Ort, an dem du dich am
+          wohlsten fühlst.
+        </p>
+        <ul class="ueber-list">
+          <li><span>✦</span>Studium &amp; Arbeit im Produktdesign</li>
+          <li><span>✦</span>Eigene 3D-Druck-Werkstatt</li>
+          <li><span>✦</span>Individuelle Anfertigungen auf Anfrage</li>
+          <li><span>✦</span>Versand deutschlandweit</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-primary">Lass uns reden</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= KONTAKT ============= -->
+  <section class="section kontakt" id="kontakt">
+    <div class="container kontakt-grid">
+      <div class="kontakt-info">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Dein Lieblings-Platz<br/>wartet auf dich.</h2>
+        <p class="lead">
+          Hast du eine Idee, eine Stadt oder einen besonderen Ort? Schreib mir
+          – ich melde mich meist innerhalb von 24 Stunden.
+        </p>
+        <div class="kontakt-cards">
+          <a class="kontakt-card" href="mailto:simon@buschen.com">
+            <span class="kc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+            </span>
+            <strong>E-Mail</strong>
+            <span>simon@buschen.com</span>
+          </a>
+          <a class="kontakt-card" href="tel:+491727508696">
+            <span class="kc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <strong>Telefon</strong>
+            <span>+49 172 7508696</span>
+          </a>
+          <div class="kontakt-card">
+            <span class="kc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <strong>Standort</strong>
+            <span>Martinistraße 49<br/>48268 Greven</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="kontakt-form" id="contactForm" novalidate>
+        <h3>Schreib mir</h3>
+        <div class="row">
+          <label>
+            <span>Dein Name</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+          </label>
+          <label>
+            <span>E-Mail</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="max@example.com" />
+          </label>
+        </div>
+        <label>
+          <span>Worum geht's?</span>
+          <select name="thema" required>
+            <option value="" disabled selected>Bitte wählen…</option>
+            <option>Individuelle 3D-Karte</option>
+            <option>Magnete</option>
+            <option>Sonderanfertigung</option>
+            <option>Kooperation</option>
+            <option>Sonstiges</option>
+          </select>
+        </label>
+        <label>
+          <span>Deine Nachricht</span>
+          <textarea name="nachricht" rows="5" required placeholder="Erzähl mir von deinem Lieblings-Platz…"></textarea>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" required />
+          <span>Ich stimme zu, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden.</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">
+          Nachricht senden
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Simon Buschen Produktdesign" />
+        <p>Mein Lieblings-Platz aus dem 3D-Drucker. Handgefertigt in Greven.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer-Navigation">
+        <h4>Navigation</h4>
+        <a href="#prozess">Prozess</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="footer-legal">
+        <h4>Rechtliches</h4>
+        <a href="#kontakt">Impressum</a>
+        <a href="#kontakt">Datenschutz</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <a href="mailto:simon@buschen.com">simon@buschen.com</a>
+        <a href="tel:+491727508696">+49 172 7508696</a>
+        <span>Martinistraße 49<br/>48268 Greven</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Simon Buschen Produktdesign</span>
+      <span>Mit ♥ gestaltet &amp; gedruckt</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
