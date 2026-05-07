@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Reveal on Scroll ---------- */
   const revealEls = document.querySelectorAll(
-    '.section-head, .step, .card-img, .ueber-img, .ueber-text, .kontakt-info, .kontakt-form, .compare-wrapper'
+    '.section-head, .step, .card-img, .ueber-img, .ueber-text, .kontakt-info, .kontakt-form, .compare-wrapper, .preis-card, .preise-note, .preise-cta'
   );
   revealEls.forEach(el => el.classList.add('reveal'));
 

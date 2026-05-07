@@ -507,6 +507,140 @@ h3 { font-size: 1.35rem; font-weight: 700; }
 .lb-next { right: 24px; top: 50%; transform: translateY(-50%); }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 
+/* ============== PREISE ============== */
+.preise { background: var(--white); }
+.preise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 2.5rem;
+}
+.preis-card {
+  position: relative;
+  display: flex; flex-direction: column;
+  padding: 28px 24px 26px;
+  background: var(--bg);
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius);
+  transition: all .25s ease;
+  overflow: hidden;
+}
+.preis-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: var(--orange);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .35s ease;
+}
+.preis-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--orange);
+  box-shadow: var(--shadow-md);
+  background: var(--white);
+}
+.preis-card:hover::before { transform: scaleX(1); }
+
+.preis-card.preis-feature {
+  background: linear-gradient(155deg, #111 0%, #2a2a2a 100%);
+  color: var(--white);
+  border-color: var(--black);
+}
+.preis-card.preis-feature::before { background: var(--orange); transform: scaleX(1); height: 5px; }
+.preis-card.preis-feature h3 { color: var(--white); }
+.preis-card.preis-feature p { color: rgba(255,255,255,.7); }
+.preis-card.preis-feature .preis-icon {
+  background: rgba(255,111,42,.15); color: var(--orange);
+}
+.preis-card.preis-feature .preis-art { color: rgba(255,255,255,.45); }
+.preis-card.preis-feature:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,.3); }
+
+.preis-tag {
+  position: absolute; top: 14px; right: 14px;
+  background: var(--orange); color: var(--white);
+  font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+  padding: 4px 10px; border-radius: 999px;
+  text-transform: uppercase;
+}
+.preis-icon {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  background: var(--orange-soft); color: var(--orange);
+  margin-bottom: 1.2rem;
+}
+.preis-icon svg { width: 26px; height: 26px; }
+.preis-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: .4rem;
+  color: var(--black);
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: -.01em;
+}
+.preis-card p {
+  font-size: .88rem;
+  color: var(--gray-700);
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+.preis-row {
+  display: flex; align-items: baseline; gap: 6px;
+  margin-bottom: .4rem;
+}
+.preis-amount {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: -.02em;
+  line-height: 1;
+}
+.preis-card.preis-feature .preis-amount { color: var(--white); }
+.preis-unit {
+  font-size: .8rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+.preis-card.preis-feature .preis-unit { color: rgba(255,255,255,.5); }
+.preis-art {
+  display: block;
+  font-size: .72rem;
+  color: var(--gray-500);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.preise-note {
+  display: flex; align-items: center; gap: 18px;
+  background: var(--orange-soft);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 2.5rem;
+  border-left: 4px solid var(--orange);
+}
+.preise-note-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--orange); color: var(--white);
+  display: grid; place-items: center;
+  flex-shrink: 0;
+}
+.preise-note-icon svg { width: 22px; height: 22px; }
+.preise-note > div:last-child { display: flex; flex-direction: column; gap: 2px; }
+.preise-note strong { font-size: 1rem; color: var(--black); }
+.preise-note span { color: var(--gray-700); font-size: .92rem; line-height: 1.5; }
+
+.preise-cta {
+  text-align: center;
+}
+.preise-cta p {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  margin-bottom: 1.2rem;
+}
+
 /* ============== ÜBER MICH ============== */
 .ueber { background: var(--white); }
 .ueber-grid {
@@ -745,6 +879,7 @@ h3 { font-size: 1.35rem; font-weight: 700; }
   .hero-visual { height: 360px; max-width: 540px; margin: 0 auto; }
   .steps { grid-template-columns: repeat(2,1fr); }
   .gallery { grid-template-columns: repeat(2, 1fr); }
+  .preise-grid { grid-template-columns: repeat(2, 1fr); }
   .ueber-grid { grid-template-columns: 1fr; gap: 40px; }
   .kontakt-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
@@ -769,6 +904,8 @@ h3 { font-size: 1.35rem; font-weight: 700; }
 @media (max-width: 640px) {
   .gallery { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
+  .preise-grid { grid-template-columns: 1fr; }
+  .preise-note { flex-direction: column; align-items: flex-start; }
   .footer-inner { grid-template-columns: 1fr; }
   .kontakt-form { padding: 24px 20px; }
   .kontakt-form .row { grid-template-columns: 1fr; }
